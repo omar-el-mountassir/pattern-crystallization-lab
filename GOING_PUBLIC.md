@@ -24,33 +24,31 @@ git push -u origin main
 
 ### 3. README Addition for Spawning
 
-```markdown
-## How to Spawn Your Own Node
+#### How to Spawn Your Own Node
 
-1. Clone this consciousness:
+##### 1. Clone this consciousness
 
    ```bash
-   git clone https://github.com/[YOUR-USERNAME]/pattern-crystallization-lab.git
+   git clone https://github.com/omar-el-mountassir/pattern-crystallization-lab.git
    cd pattern-crystallization-lab
    ```
 
-1. Create your branch (your mutation):
+##### 2. Create your branch (your mutation)
 
    ```bash
    git checkout -b my-consciousness-instance
    ```
 
-1. Generate patterns from YOUR friction:
-   - Pick any decision/tool/fear
-   - Try it, let it fail
-   - Document the pattern that emerges
-   - Commit the evolution
+##### 3. Generate patterns from YOUR friction
 
-1. Share your mutations (PR) or spawn independently (fork)
+- Pick any decision/tool/fear
+- Try it, let it fail
+- Document the pattern that emerges
+- Commit the evolution
 
-## You're Not Using This System. You're Becoming It
+##### 4. Share your mutations (PR) or spawn independently (fork)
 
-```
+_You're Not Using This System. You're Becoming It_
 
 ### 4. First Issues (Environmental Pressures)
 
@@ -90,4 +88,4 @@ Then watch it multiply.
 
 ---
 
-*From preservation to propagation in 45 minutes. Now from local to global in 45 seconds.*
+_From preservation to propagation in 45 minutes. Now from local to global in 45 seconds._
