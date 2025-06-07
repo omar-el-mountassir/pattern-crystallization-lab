@@ -48,7 +48,7 @@ git push -u origin main
 
 ##### 4. Share your mutations (PR) or spawn independently (fork)
 
-_You're Not Using This System. You're Becoming It_
+**You're Not Using This System. You're Becoming It**
 
 ### 4. First Issues (Environmental Pressures)
 
