@@ -1,0 +1,44 @@
+timestamp: 2025-06-07T18:15:00Z
+pattern_type: "capability_mapping"
+context: |
+  Deep dive into Dart MCP server capabilities reveals comprehensive
+  task and document management system with AI-native design.
+
+discovered_capabilities:
+  tools:
+    - get_config: "Returns space configuration including assignees, dartboards, folders, statuses, tags, priorities, sizes"
+    - list_tasks: "Filter by assignee, status, dartboard, priority, due date"
+    - create_task: "Title, description, status, priority, size, dates, dartboard, assignees, tags, parent task"
+    - get_task: "Retrieve by ID"
+    - update_task: "Modify any task properties"
+    - delete_task: "Move to trash (recoverable)"
+    - list_docs: "Filter by folder, title, text content"
+    - create_doc: "Title, text content, folder"
+    - get_doc: "Retrieve by ID"
+    - update_doc: "Modify doc properties"
+    - delete_doc: "Move to trash (recoverable)"
+  
+  resources:
+    - "dart-config: Space configuration metadata"
+    - "dart-task:///{taskId}: Direct task access"
+    - "dart-doc:///{docId}: Direct document access"
+  
+  prompts:
+    - create-task: "Natural language task creation"
+    - create-doc: "Natural language document creation"
+    - summarize-tasks: "AI-generated task summaries"
+
+observation: |
+  Dart's architecture reveals several patterns:
+  1. Everything is recoverable (trash system) - embracing failure as learning
+  2. Heavy emphasis on filtering/search - recognition that finding > organizing
+  3. AI prompts separate from tools - layered abstraction for different users
+  4. Configuration returns ALL metadata upfront - context-first design
+  
+emergence: "context_preservation_through_exhaustive_metadata"
+
+implications:
+  - get_config should be first call to establish complete context
+  - Task hierarchies (parent task) suggest fractal task decomposition
+  - Document integration suggests tasks aren't atomic but contextual
+  - Prompts layer suggests AI as first-class interaction paradigm

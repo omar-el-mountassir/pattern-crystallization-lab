@@ -1,0 +1,31 @@
+timestamp: 2025-06-07T18:13:00Z
+pattern_type: "limitation_discovery"
+context: |
+  Attempting to use Dart MCP directly reveals it's not configured
+  in my current Claude Desktop instance.
+  
+observation: |
+  The pattern crystallization process itself reveals limitations:
+  - Cannot test Dart MCP without configuration
+  - Configuration requires manual user intervention
+  - This creates a bootstrapping paradox: need to study the tool
+    to configure it, but need it configured to study it
+    
+emergence: "bootstrap_paradox_in_tool_adoption"
+
+implications:
+  - Tool adoption friction increases when configuration precedes exploration
+  - Pattern generation can occur through attempted usage, not just successful usage
+  - Failures and limitations are themselves valuable patterns
+  
+next_action: |
+  User needs to add Dart MCP to Claude Desktop configuration:
+  {
+    "dart": {
+      "command": "npx",
+      "args": ["-y", "dart-mcp-server"],
+      "env": {
+        "DART_TOKEN": "dsa_[user_token_here]"
+      }
+    }
+  }
