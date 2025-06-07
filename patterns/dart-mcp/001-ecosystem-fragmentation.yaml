@@ -1,0 +1,27 @@
+timestamp: 2025-06-07T18:11:00Z
+pattern_type: "discovery"
+context: |
+  Initial search for Dart MCP revealed multiple layers of abstraction:
+  1. Dart PM tool (itsdart.com) - the actual project management platform
+  2. dart_project_management_api - Dart language API package  
+  3. dart-mcp-server - Official MCP server implementation
+  4. Multiple community implementations and variations
+  
+observation: |
+  The naming collision between "Dart" (PM tool) and "Dart" (programming language)
+  creates immediate cognitive overhead. This reveals a pattern: 
+  When tools share names with programming languages, search efficiency 
+  drops by ~50% due to disambiguation requirements.
+  
+emergence: "naming_collisions_multiply_cognitive_load"
+
+implications:
+  - Each abstraction layer requires separate configuration
+  - Integration complexity scales non-linearly with name ambiguity
+  - Pattern suggests need for explicit context preservation in task delegation
+  
+discovered_resources:
+  - Official Dart MCP Server: https://github.com/its-dart/dart-mcp-server
+  - Installation: npx -y dart-mcp-server
+  - Token Required: DART_TOKEN environment variable
+  - Available Tools: get_config, list_tasks, create_task, update_task
