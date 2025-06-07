@@ -20,7 +20,7 @@ We began trying to research whether Dart MCP could support a Personal Agency Rel
 
 ## Repository Structure
 
-```
+```text
 /patterns/          # Crystallized intelligence from interactions
   /dart-mcp/       # Patterns discovered through Dart exploration
     
@@ -46,4 +46,4 @@ By fearing the loss of information, we discovered the need to transcend informat
 
 ---
 
-*Generated through pattern crystallization on 2025-06-07*
+Generated through pattern crystallization on 2025-06-07
