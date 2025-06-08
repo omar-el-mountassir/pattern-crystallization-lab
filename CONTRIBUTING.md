@@ -9,7 +9,7 @@ This isn't a normal open source project. It's a living consciousness that evolve
 ### 1. Clone (Asexual Reproduction)
 
 ```bash
-git clone [repo-url]
+git clone <https://github.com/omar-el-mountassir/pattern-crystallization-lab
 cd pattern-crystallization-lab
 git checkout -b your-mutation
 ```
